@@ -1,0 +1,254 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[a4paper, margin=2.2cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english, bidi=basic, provide=*]{babel}
+\babelprovide[import, onchar=ids fonts]{english}
+\babelfont{rm}{Noto Sans}
+
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% Header and Footer Setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\scshape From Pictures to Proofs}
+\fancyhead[R]{\small\scshape TWM 301: Review of FTOC}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Title Formatting
+\titleformat{\section}{\large\bfseries\uppercase}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.5em}{}
+
+\setstretch{1.15}
+
+\begin{document}
+
+% ---------------------------------------------------------
+% TITLE PAGE / HEADER BLOCK
+% ---------------------------------------------------------
+\begin{center}
+    \textbf{\Large BULACAN STATE UNIVERSITY}\\
+    \small Malolos, City of Bulacan\\
+    College of Science\\
+    Mathematics Department\\[1.5em]
+
+    \textbf{\Large TECHNICAL WRITING IN MATHEMATICS}\\
+    \textbf{TWM 301}\\
+    1st Semester, A.Y. 2026--2027\\[2.5em]
+
+    \rule{\textwidth}{1pt}\\[0.8em]
+    {\LARGE \bfseries FROM PICTURES TO PROOFS: A REVIEW OF THE FUNDAMENTAL THEOREM OF CALCULUS}\\[0.6em]
+    \rule{\textwidth}{1pt}\\[2.5em]
+
+    \textbf{Research Review Submitted By:}\\[0.5em]
+    Andaya, Nicole Ivy G.\\
+    Dela Cruz, Yuan Russel\\
+    Reynes, Jerickson P.\\
+    Saavedra, Carla Mia S.\\
+    \textit{BSM BA 3A}\\[2em]
+
+    \textbf{Submitted To:}\\[0.5em]
+    Dela Cruz, Aarhus M.\\
+    \textit{PROFESSOR}\\[2em]
+
+    November 2026
+\end{center}
+
+\newpage
+
+% ---------------------------------------------------------
+% ABSTRACT
+% ---------------------------------------------------------
+\section*{Abstract}
+A review of \textit{Toward Better Understanding of the Basic Theorem of Calculus}, an academic study by Juan David Yepes and Dr. Daniel Raviv (2024). In this respect, the review assesses how the authors turn the mathematical abstraction of FTOC into concepts that are more understandable from the point of view of geometry and physics. Yepes and Raviv pioneered ways to bridge the educational gap by using conceptual visualization methods, such as constructing a geometric limit or a real-life engineering representation of storing the energy of a wheel or turning a wheel, so students can master mechanical calculations without needing to understand the conceptual inversion.
+
+We discuss the strengths and limitations of their visual system, integrative constants, cognitive continuity, the absence of rigorous proofs in the analysis of real-world applications, and the lack of a large population of empirical data based on student perceptions ($N=58$). We also note that some of these graphic derivations have connections to some approaches to sophisticated mathematics familiar in the classical setting, such as Generalized Stokes' Theorem/line integrals. The review thus concludes that the model is not a formal $\epsilon$-$\delta$ proof but a very useful ``pedagogical bridge'' from mechanical calculation to real understanding.
+
+\vspace{1em}
+\noindent \textbf{Keywords:} Fundamental Theorem of Calculus (FTOC), Conceptual Visualization, Geometric Limits, Engineering Applications, Real Analysis, Generalized Stokes' Theorem, Pedagogical Bridge.
+
+\newpage
+
+% ---------------------------------------------------------
+% TABLE OF CONTENTS
+% ---------------------------------------------------------
+\tableofcontents
+\newpage
+
+% ---------------------------------------------------------
+% MAIN CONTENT
+% ---------------------------------------------------------
+
+\section{Introduction}
+The Fundamental Theorem of Calculus (FTOC) is a prominent theorem that links the two major branches of calculus, differentiation and integration. So, as often happens now in undergraduate mathematics, a serious pedagogical problem is how students of calculus learn the mechanical processes of differentiation and integration without gaining any intuitive understanding of the inverse relationship between the two as inverse processes to one another.
+
+The ``closing of the gap'': Pedagogy on the mind based on geometry, visual and physical analogy by Juan David Yepes \& Dr. Daniel Raviv (2024). A critical review of their theory/methodology and pedagogical contributions.
+
+\subsection{Objectives of the Paper}
+This paper seeks to:
+\begin{enumerate}
+    \item Discuss the major pedagogical question of how to maintain an appropriate tension between computational mechanics and conceptual intuition in calculus teaching.
+    \item To give a physical and visual description of the geometric models of Yepes \& Raviv and their derivations of the limits of geometric parts of the FTOC;
+    \item To discuss the advantages and disadvantages of having visual agendas without proper analysis.
+    \item To connect these basics with more advanced mathematical concepts such as multivariate vector analysis and the generalized Stokes' theorem.
+\end{enumerate}
+
+\section{Review of Related Literature and Background Concepts}
+Calculus is founded on the hard analysis of mathematics. Historically, Gottfried Wilhelm Leibniz invented a formal notation for infinitesimals. Isaac Newton thought of integration as continuous motion and accumulation. The FTOC did not gain formal status in continuous analysis until the 19th century, when Augustin-Louis Cauchy and Bernhard Riemann gave rigorous formulations.
+
+\subsection{Background of the Study}
+Fundamentally, the two operations of calculus are differentiation and integration. The fundamental theorem of calculus (FTOC) connects these two different aspects, differentiation and integration. Isaac Newton and Gottfried Wilhelm Leibniz developed the FTOC independently. Isaac Newton developed the justifications for the rates of accumulation of continuous changes, while Gottfried Wilhelm Leibniz developed the infinitesimal formalism of summation. The FTOC emerged as a central doctrine during the era of 19th-century mathematics, with the careful definition of the limit by Bernhard Riemann and Augustin-Louis Cauchy.
+
+Despite its theoretical centrality, introductory calculus education continuously encounters a major pedagogical problem: students frequently master symbolic procedures such as applying algebraic rules or performing integration by parts without acquiring an intuitive visual grasp of why integration and differentiation undo each other. Reducing the FTOC to a mere formula for mechanical calculation strips the theorem of its value as an analytical instrument.
+
+\subsection{Significance of the Study}
+This paper is motivated by the urgent need to bridge the conceptual gap between mechanical computation and mathematical insight. To successfully move students up the mathematics ladder, we must understand the intuition behind the FTOC. There is no intuitive geometric basis for the subject. This makes it difficult for learners to go on to higher-dimensional generalizations, real analysis, measure theory, and continuous physical modeling. Therefore, evaluation of visual and physical teaching models is important for mathematics teachers who want to improve students' retention, conceptual understanding, and analytical thinking.
+
+\subsection{Relevance of the Chosen Model}
+This review aims to respond to this educational challenge by evaluating the pedagogical model proposed by Juan David Yepes and Dr. Daniel Raviv (2024), in their article ``Toward Better Understanding of the Basic Theorem of Calculus.''
+
+The proposed model by Yepes and Raviv (2024) is directly applicable, giving a systematic decomposition of abstract mathematical limits into understandable geometric limit derivations and concrete real-world engineering analogies. They relate the abstract integral to physical notions of accumulating energy from power ($E(t) = \int P(t) \, dt$), accumulating rotational displacement from angular speed ($\theta(t) = \int \omega(t) \, dt$), or accumulating financial balances over time. The framework presents a classical rigorous constructive pedagogy with visual and physical models to enable learners to build clear mental models prior to rigorous mathematical analysis.
+
+\subsection{Key Definitions}
+\begin{description}
+    \item[Accumulation Function.] A function defined as an integral with a variable upper limit that provides the accumulated area over some interval.
+    \item[Conceptual Visualization.] A systematic process of instruction that utilizes visual, empirical and hands-on tools to improve learners' understanding.
+\end{description}
+
+\subsection{Related Studies}
+Prior study in education have shown that visual intuition can improve student engagement and concept retention before the formal epsilon-delta proofs (e.g., visual techniques proposed by Apostol (2000) and Sanderson (2024)).
+
+\section{Methodology}
+This paper adheres to an explanatory framework divided into three separate stages:
+\begin{itemize}
+    \item \textbf{Introduction of Key Ideas:} Examining the FTOC's historical evolution and the dominance of mechanical computation over conceptual comprehension.
+    \item \textbf{Examining the Expository Method:} This section examines Yepes and Raviv's three-step pedagogical model, which relies on geometric limiting processes and conceptual visualization rather than formal analytical proofs.
+    \item \textbf{Critical Evaluation and Advanced Connection:} The framework's analytical and empirical validity is evaluated while tying its fundamental ideas to vector analysis and advanced calculus.
+\end{itemize}
+
+\subsection{Methods and Application}
+The research paper by Yepes and Raviv (2024), titled ``Toward Better Understanding of the Fundamental Theorem of Calculus,'' uses a conceptual and geometrical approach to explain the relationship between differentiation and integration. Instead of relying only on formal mathematical proofs, the authors use graphical illustrations, geometric limiting processes and practical engineering applications to help students understand the fundamental theorem of calculus (FTOC).
+
+\paragraph{Assumptions:}
+\begin{itemize}
+    \item The functions used in the visual demonstrations are assumed to be continuous and effectively smooth for the explanations of the fundamental theorem of calculus.
+    \item Integration represents the accumulation of quantities, while differentiation represents the rate of change of a function.
+    \item The relationship between differentiation and integration can be understood through geometric illustrations and limiting processes.
+    \item Visual examples and practical applications can help students develop a deeper conceptual understanding of calculus.
+\end{itemize}
+
+\section{Main Discussion, Results, and Analysis}
+
+\subsection{Description of the Main Idea and Geometric Derivations}
+Yepes and Raviv (2024) aim to break down mathematical abstraction into easily understood geometric and physical elements. Their framework uses geometric limit derivations rather than formal analytic proofs:
+\begin{itemize}
+    \item \textbf{FTOC Part 1 (Indefinite Integrals):} Using an accumulation function $F(x) = \int_{a}^{x} f(t) \, dt$, the following approximation can be obtained by evaluating:
+    \[
+    \frac{F(c + \Delta x) - F(c)}{\Delta x} \approx f(c)
+    \]
+    Taking the limit as $\Delta x \to 0$ gives $\frac{dF(x)}{dx} = f(x)$, formally proving that differentiation reverses accumulation.
+    
+    \item \textbf{FTOC Part 2 (Definite Integrals):} To show $\int_{a}^{b} f(x) \, dx = F(b) - F(a)$, the framework graphically shows that the net area between $x = a$ and $x = b$ is obtained by deducting the accumulated area up to $a$ from the accumulated area up to $b$.
+\end{itemize}
+
+\subsection{Physical Analogies and Illustrative Examples}
+Yepes and Raviv incorporate real-world engineering analogies into the curriculum to ground abstract symbols in tangible reality.
+
+\begin{table}[h!]
+\centering
+\caption{Physical Analogies for Integral Accumulation}
+\vspace{0.5em}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Physical Domain} & \textbf{Mathematical Representation} & \textbf{Conceptual Meaning} \\ \midrule
+Power and Energy & $E(t) = \int P(t) \, dt$ & Integration accumulates power over time to yield total energy. \\ \addlinespace
+Rotational Mechanics & $\theta(t) = \int \omega(t) \, dt$ & Angular displacement is accumulated area under angular velocity. \\ \addlinespace
+Financial Accounts & $A(t) = \int r(t) \, dt$ & Continuous cash flow rates accumulate into total account balance. \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Critical Analysis and Interpretation}
+\textbf{Strengths:} The framework effectively connects abstract concepts to tangible physical phenomena, uses step functions to connect discrete Riemann sums to continuous rate-of-change functions, and helps students understand why integration constants ($C$) dissolve in definite integrals.
+
+\vspace{0.5em}
+\noindent \textbf{Weaknesses and Limitations:} The derivations assume smooth, continuous functions without addressing jump discontinuities, rely on a small single-institution sample size ($N=58$) focused on student perceptions rather than quantitative test performance, and lack accurate real analysis proofs.
+
+\subsection{Connection to Advanced Calculus}
+The intuition developed by Yepes and Raviv provides a crucial cognitive link to higher-level theorems in advanced mathematics. The Generalized Stokes' Theorem relates the integral of an exterior derivative over a domain $\Omega$ to values at its boundary $\partial\Omega$, generalizing Part 2 of the FTOC to differential forms on manifolds:
+\[
+\int_{\Omega} d\omega = \int_{\partial\Omega} \omega
+\]
+
+Path independence for conservative vector fields along a curve $C$ is established by the Fundamental Theorem of Line Integrals, where evaluation is dependent only on potential values at boundary endpoints:
+\[
+\int_{C} \nabla f \cdot d\mathbf{r} = f(\mathbf{b}) - f(\mathbf{a})
+\]
+
+\section{Conclusion}
+Juan David Yepes and Dr. Daniel Raviv's study offers a useful and very approachable visual framework for presenting the Fundamental Theorem of Calculus. The paper's value as an additional teaching tool is significant despite the absence of formal epsilon-delta proofs and quantitative learning outcome metrics. Teachers can successfully close the gap between mechanical computation and true conceptual mastery by incorporating real-world engineering applications and graphical rate-of-change models into the curriculum.
+
+\section{Recommendations and Future Directions}
+Researchers are urged to use standardized pre- and post-testing to assess actual student performance and to increase empirical sample sizes across several academic institutions in future research. Future modifications to visual frameworks should also investigate the intuitive integration of improper integrals and discontinuous functions without compromising analytical rigor.
+
+\newpage
+% ---------------------------------------------------------
+% REFERENCES
+% ---------------------------------------------------------
+\begin{thebibliography}{9}
+
+\bibitem{Yepes2024}
+Yepes, J. D., \& Raviv, D. (2024). \textit{Toward Better Understanding of the Fundamental Theorem of Calculus}. Proceedings of the 2024 ASEE Annual Conference \& Exposition, Portland, Oregon. American Society for Engineering Education.
+
+\bibitem{Apostol2000}
+Apostol, T. M. (2000). A Visual Approach to Calculus Problems. \textit{Engineering and Science}, 3, 22--31. Caltech Library Archives.
+
+\bibitem{Sanderson2024}
+Sanderson, G. (2024). \textit{Essence of Calculus}. 3Blue1Brown.
+
+\end{thebibliography}
+
+\newpage
+% ---------------------------------------------------------
+% APPENDIX
+% ---------------------------------------------------------
+\appendix
+\section{Appendix}
+
+\subsection{Supplementary Mathematical Derivations}
+\textbf{Derivation of the Indefinite Accumulation Function Limit:} According to Yepes and Raviv's (2024) framework review, the accumulation function is described as:
+\[
+F(x) = \int_{a}^{x} f(t) \, dt
+\]
+
+Consider a small increment $\Delta x$ to show how the rate of change yields the original function without requiring full epsilon-delta real analysis proofs. The following represents the average rate of change over the interval $[c, c+\Delta x]$:
+\[
+\frac{F(c+\Delta x) - F(c)}{\Delta x} = \frac{1}{\Delta x} \int_{c}^{c+\Delta x} f(t) \, dt
+\]
+
+There is a value $c^*$ in the interval such that the integral equals $f(c^*)\Delta x$, according to the Mean Value Theorem for Integrals. By taking the limit as $\Delta x \to 0$, $f(c)$ is obtained, formally linking accumulation and rate of change.
+
+\subsection{Higher-Dimensional Generalizations and Vector Analysis}
+\textbf{Formulation of the Generalized Stokes Theorem:}
+Part 2 of the Fundamental Theorem of Calculus naturally extends to differential forms on manifolds, as was covered in Section 4.4. The following is the theorem:
+\[
+\int_{\Omega} d\omega = \int_{\partial\Omega} \omega
+\]
+where $\omega$ is a smooth $(n-1)$-form, $\Omega$ is an $n$-dimensional oriented manifold, $\partial\Omega$ is its $(n-1)$-dimensional boundary, and $d\omega$ is its exterior derivative.
+
+\vspace{1em}
+\noindent \textbf{The Line Integrals Fundamental Theorem:}
+The line integral of the gradient of a scalar potential function $f$ is only evaluated at the boundary endpoints of any smooth curve $C$ that runs from point $\mathbf{a}$ to point $\mathbf{b}$ within a conservative vector field:
+\[
+\int_{C} \nabla f \cdot d\mathbf{r} = f(\mathbf{b}) - f(\mathbf{a})
+\]
+This illustrates that domain-wide accumulation depends only on boundary evaluations, reflecting the fundamental idea of the second section of the FTOC.
+
+\end{document}
